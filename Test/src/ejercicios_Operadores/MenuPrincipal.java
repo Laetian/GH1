@@ -31,7 +31,9 @@ public class MenuPrincipal {
 
 		case 1:
 			System.out.println("Introduzca el valor del lado: ");
+
 			ent1 = sc.nextDouble();
+
 			AreaCuadrado areaCuadrado = new AreaCuadrado();
 			areaCuadrado.areaCuadrado(ent1);
 			break;
