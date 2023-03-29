@@ -3,6 +3,8 @@
  */
 package ejerciciosEstructurasControl;
 
+import java.util.Scanner;
+
 /**
  * @author Alumno
  *
@@ -121,5 +123,22 @@ public class EstructurasControl {
 			i++;
 		}
 		System.out.println("Final bucle while. \n");
+	}
+	
+	public void centinela()	{
+		final int centinela = -1;
+		Scanner sc = new Scanner(System.in);
+		int nota =0;
+		int suma=0;
+		
+		System.out.println("Introduzca la primera nota: ");
+		nota = sc.nextInt();
+				
+				while (nota!=centinela) {
+					suma += nota;
+					System.out.println("Introduzca la siguiente nota: ");
+					nota = sc.nextInt();
+				}
+		System.out.println("La suma de las notas es: "+suma);
 	}
 }
