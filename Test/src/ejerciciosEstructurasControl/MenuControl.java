@@ -1,6 +1,7 @@
 package ejerciciosEstructurasControl;
 
 import java.util.Scanner;
+import java.util.Timer;
 
 public class MenuControl {
 
@@ -9,6 +10,7 @@ public class MenuControl {
 
 		menuControl();
 	}
+	static Timer timer = new Timer();
 
 	static void menuControl() {
 		EstructurasControl estructurasControl = new EstructurasControl();
@@ -18,16 +20,15 @@ public class MenuControl {
 				"Introduzca: \n 1 para if simple \n 2 para ifDouble \n 3 para ifAnidado \n 4 para switchcase \n"
 				+ " 5 para bucleWhile \n 6 para centinela \n 7 para bucleFor \n 8 para bucleDoWhile \n 9 para forAnidado");
 		if (sc.hasNextInt()) {
-			if(sc.hasNextInt())
-			{
+
 				opcion = sc.nextInt();
-			}
-			else {
-				System.out.println("Input no valido, debe introducir un número válido");
-			}
 		} else {
-			System.out.println("Input no valido \n");
-			sc.nextLine();
+			System.out.println("Input no valido debe introducir, debe introducir un número válido \n");
+//			sc.nextLine();
+//			timer.schedule(new TimerTask() {
+//				System.out.println("");
+//			}
+//			, 500);
 			menuControl();
 
 		}
