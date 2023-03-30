@@ -25,7 +25,16 @@ public class MenuPrincipal {
 	public void mPrincipal() {
 		System.out.println(
 				"Introduzca 1 para calcular el area /n de un cuadrado o 2 para calcular el area de un /n rectangulo");
-		opcion = sc.nextInt();
+		if (sc.hasNextInt()) {
+			opcion = sc.nextInt();  
+		}else
+		{
+			System.out.println("Input no valido \n");
+			sc.nextLine();
+			mPrincipal();
+
+		}
+
 
 		switch (opcion) {
 
