@@ -9,7 +9,7 @@ public class MetodoSubstring {
 		
 		System.out.println(hola.substring(1));//Nos da el substring desde donde empezamos hasta el final
 		
-		System.out.println(hola.substring(1, 2));//Nos da el substring desde donde empezamos hasta donde le hemos indicado que termine
+		System.out.println(hola.substring(1, 3));//Nos da el substring desde donde empezamos hasta donde le hemos indicado que termine, el ultimo no incluido
 
 	}
 
