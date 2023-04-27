@@ -7,7 +7,6 @@ public class MetodoSubString {
 
 		String hola = "hola";
 
-
 		System.out.println(hola.substring(2)); // Con un solo para metro imprime desde donde le indicamos hasta el final
 		System.out.println(hola.substring(2, 3));// Con dos parametros imprime desde donde le indicamos en el 1 hasta
 													// donde el indicamos en el 2
