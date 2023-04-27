@@ -6,7 +6,7 @@ public class MetodoSubString {
 		// TODO Auto-generated method stub
 
 		String hola = "hola";
-		String hola1 = "Hola";
+
 
 		System.out.println(hola.substring(2)); // Con un solo para metro imprime desde donde le indicamos hasta el final
 		System.out.println(hola.substring(2, 3));// Con dos parametros imprime desde donde le indicamos en el 1 hasta
