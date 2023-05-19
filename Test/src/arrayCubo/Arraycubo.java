@@ -1,11 +1,11 @@
 package arrayCubo;
 
-public class ArrayCubo {
+public class Arraycubo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int cubo[][] = new int[10][10];
+		int cubo[][] = new int[100][100];
 		int i = 0;
 		int j = 0;
 		int a = 0;
