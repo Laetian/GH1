@@ -9,6 +9,9 @@ public abstract class ClaseAbstract {
 	public double metodoNoAbstractoParametros(int entero) {
 		return 0;
 	}
+	public double metodoASobreescribir(double boh) {
+		return boh-1;
+	}
 
 	public abstract double metodoAbstractoParametros(int entero);
 
@@ -21,5 +24,11 @@ class HeredaClaseAbstract extends ClaseAbstract {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	@Override
+	public double metodoASobreescribir(double boh) {
+		return boh-2;
+	}
+	
 
 }
